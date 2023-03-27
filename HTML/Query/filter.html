@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        // 🚩filter方法 : 遍历数组，添加判断条件，返回新数组
+        // 1.定义原始数组
+        let arr = [1,2,3];
+        // 2.使用filter方法
+        let result = arr.filter((item,index)=>{
+            return item >= 2;
+        })
+        console.log(result); // [2,,3]
+        console.log(result === arr); // false
+
+    </script>
+</body>
+</html>
