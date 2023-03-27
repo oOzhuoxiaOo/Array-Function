@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 🚩splice方法 :  向数组某一位置 插入/删除/替换 元素 
+
+        // 1.定义原始数组
+        let arr = [1,2,3];
+        // 2.使用splice方法 
+        // 参数:  start,deleteCount,item
+        // 开始位置、删除数量，追加的元素
+
+        // 插入 （开始位置0，删除数量0，插入元素10
+        arr.splice(0,0,10);
+        console.log(arr); // 10,1,2,3
+
+        // 删除 开始位置3，删除数量1，插入元素无
+        console.log(arr.splice(3,1)); // 10,1,2
+        console.log(arr); // 10,1,2
+
+        // 修改 开始位置0，删除数量1，插入元素0
+        arr.splice(0,1,0);
+        console.log(arr); // 0,1,2
+    </script>
+</body>
+</html>
