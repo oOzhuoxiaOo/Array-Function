@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 🚩map方法 : 创建一个新数组，新数组的每个元素都是调用一个提供的函数的返回值
+
+        // 1.定义原始数组
+        let arr = [1,2,3];
+        // 2.使用map方法 
+        // 参数:  item,index,array
+        // 索引值、索引，当前操作的数组
+
+        // 
+        let newArr = arr.map((item,index,array)=>{
+            console.log(item,index); // 1 ,0 / 2,1/3,2
+            console.log(arr === array) //true
+            return 5
+        });
+        console.log(newArr); // [5,5,5]
+
+    </script>
+</body>
+</html>
