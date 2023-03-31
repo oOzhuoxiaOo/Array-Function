@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        // 🚩find() 方法 : 返回数组中满足提供的测试函数的第一个元素的值，否则返回undefined
+        // 1.定义原始数组
+        let arr = [1,2,3,4,5];
+        // 2.使用find方法
+        let result = arr.find((item)=>{
+            return item > 3
+        })
+        console.log(result); // 4
+
+    </script>
+</body>
+</html>
